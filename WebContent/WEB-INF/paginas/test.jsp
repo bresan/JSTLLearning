@@ -1,7 +1,7 @@
 <%@page import="br.com.bresan.jstl.web.User"%>
 <%@page import="java.util.List"%>
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
@@ -39,10 +39,13 @@
 						<td>Não</td>
 					</c:otherwise>
 				</c:choose>
+				
+				<!-- Format date -->
+				<!-- <td><fmt:formatDate pattern="dd/MM/yyyy" value="${p.dataInicioVenda.time}" /></td> -->
 			</tr>
 		</c:forEach>
 	</table>
-	
+
 	<c:url value="/other.jsp" var="urlOther" />
 	<a href="${urlOther}">Outra página</a>
 </body>
