@@ -6,6 +6,17 @@ public class User {
 	public String email;
 	public String name;
 	public int age;
+	public boolean valid;
+
+	
+
+	public boolean isValid() {
+		return valid;
+	}
+
+	public void setValid(boolean valid) {
+		this.valid = valid;
+	}
 
 	public int getId() {
 		return id;

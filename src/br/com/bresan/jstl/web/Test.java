@@ -27,6 +27,7 @@ public class Test extends HttpServlet {
 			user.setEmail("email@mail.org");
 			user.setName("Rodrigo");
 			user.setAge(19);
+			user.setValid(true);
 			userList.add(user);
 		}
 		

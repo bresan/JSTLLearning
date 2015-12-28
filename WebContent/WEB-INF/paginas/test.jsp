@@ -12,11 +12,33 @@
 </head>
 <body>
 	<table>
-		<c:forEach items="${userList}" var="p">
+		<!-- Foreach on the received list -->
+		<c:forEach items="${userList}" var="p" varStatus="st">
 			<tr id="usuario${p.id}">
+
+				<!-- Count -->
+				<td>${st.count}</td>
 				<td>${p.name}</td>
 				<td>${p.email}</td>
 				<td>${p.age}</td>
+
+				<!-- First way of testing -->
+				<c:if test="${p.valid}">
+					<td>Sim</td>
+				</c:if>
+				<c:if test="${!p.valid}">
+					<td>Não</td>
+				</c:if>
+
+				<!-- Second way -->
+				<c:choose>
+					<c:when test="${p.valid}">
+						<td>Sim</td>
+					</c:when>
+					<c:otherwise>
+						<td>Não</td>
+					</c:otherwise>
+				</c:choose>
 			</tr>
 		</c:forEach>
 	</table>
