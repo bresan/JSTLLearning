@@ -42,5 +42,8 @@
 			</tr>
 		</c:forEach>
 	</table>
+	
+	<c:url value="/other.jsp" var="urlOther" />
+	<a href="${urlOther}">Outra página</a>
 </body>
 </html>
