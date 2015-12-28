@@ -42,6 +42,9 @@
 				
 				<!-- Format date -->
 				<!-- <td><fmt:formatDate pattern="dd/MM/yyyy" value="${p.dataInicioVenda.time}" /></td> -->
+				
+				<!-- Format currency -->
+				<!--<fmt:formatNumber value="${p.preco}" type="currency"/> -->
 			</tr>
 		</c:forEach>
 	</table>
