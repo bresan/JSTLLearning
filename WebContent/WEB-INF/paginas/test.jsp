@@ -40,16 +40,14 @@
 					</c:otherwise>
 				</c:choose>
 				
-				<!-- Format date -->
-				<!-- <td><fmt:formatDate pattern="dd/MM/yyyy" value="${p.dataInicioVenda.time}" /></td> -->
-				
-				<!-- Format currency -->
-				<!--<fmt:formatNumber value="${p.preco}" type="currency"/> -->
+			
 			</tr>
 		</c:forEach>
 	</table>
 
 	<c:url value="/other.jsp" var="urlOther" />
 	<a href="${urlOther}">Outra página</a>
+	
+	<c:import url="footer.jsp"/>
 </body>
 </html>
