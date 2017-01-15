@@ -1,6 +1,6 @@
 # JSTL Learning
 
-Simple repo for the learning of Java Standard Tag Library (JSTL) for usage on Java Servlet.s
+Simple repo for the learning of Java Standard Tag Library (JSTL) for usage on Java Servlets.
 
 In case of any doubt, feel free to ask (opening an issue or sending me a message).
 
